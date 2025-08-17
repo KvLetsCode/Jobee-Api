@@ -94,7 +94,7 @@ app.use((req, res, next) => {
 //Middleware Hnalde error
 app.use(errorMiddleware)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4000
 const server = app.listen(PORT,"0.0.0.0", () => {
     console.log(`Server started on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
     
