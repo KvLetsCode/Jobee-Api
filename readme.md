@@ -5,6 +5,10 @@
 A **RESTful API** built with **Node.js, Express, and MongoDB** for managing job postings and applications.
 This project provides authentication, job listings, user profiles, and application management features.
 
+## 🔗 API Documentation  
+[Live Demo](https://documenter.getpostman.com/view/47427637/2sB3BHm97T)  
+
+
 ---
 
 ## 🚀 Features
@@ -163,4 +167,5 @@ npm run test
 5. Create a pull request
 
 ---
+
 
