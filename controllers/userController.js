@@ -102,7 +102,8 @@ exports.getPublishedJobs = catchAsyncErrors(async (req, res, next) => {
 // Adding controller method accessible by admin
 //show all users 
 exports.getUsers = catchAsyncErrors(async (req,res,next) => {
-    const apiFilters = new APIFilters(User.find(), req.query).filter().sort().limitFields().pagination()
+    const queryObj = { ...req.query };  
+    const apiFilters = new APIFilters(User.find(), queryObj).filter().sort().limitFields().pagination()
 
     const users = await apiFilters.query
 
